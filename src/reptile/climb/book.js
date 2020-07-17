@@ -4,15 +4,12 @@ const url = 'http://bang.dangdang.com/books/bestsellers/01.00.00.00.00.00-24hour
 let climb = new Climb({
   url,
   limit: 25,
-  nextButton: function ($) {
-    return $('.next a')[0]
-  },
+  nextButton: '.next a',
   store: path.join(__dirname, '../store/book.json')
 })
 export default function () {
   climb.start(() => {
     var $ = window.$; // // 拿到页面上的JQuery
-    console.log($)
     var itemList = $('.bang_list.clearfix.bang_list_mode li'); // 拿到所有的item
     var links = []; // 存储爬取的数据
     // 循环写进数组

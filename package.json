@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "koa": "^2.7.0",
     "mysql2": "^1.6.5",
     "puppeteer": "^1.19.0",
     "sequelize": "^5.10.2"
