@@ -9,7 +9,7 @@ export default class More {
     if (typeof this.nextButton === 'string') {
       dom = await page.$(this.nextButton); // 获取下一页按钮      
     } else {
-      dom = this.nextButton(page.$)
+      dom = this.nextButton(page)
     }
     if (!dom) {
         chalk.red('数据获取完毕');
