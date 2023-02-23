@@ -14,7 +14,7 @@
     "koa": "^2.7.0",
     "mysql2": "^1.6.5",
     "puppeteer": "^1.19.0",
-    "sequelize": "^5.10.2"
+    "sequelize": "^6.28.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
